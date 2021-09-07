@@ -56,10 +56,23 @@ for i in range(100):
     else:
         print('{} процентов'.format(i + 1))
 
+def num_translate(eng):
+    my_dictionary = {'one': 'один',
+                     'two': 'два',
+                     'three': 'три',
+                     'four': 'четыре',
+                     'five': 'пять',
+                     'six': 'шесть',
+                     'seven': 'семь',
+                     'eight': 'восемь',
+                     'nine': 'девять',
+                     'ten': 'десять'}
+    return my_dictionary.get(eng)
+
+print(num_translate('four'))
 
 
 
 
-
-
-
+#nums = ['1578.4', '892.4', '354.1', '871.5']
+#print(sum(map(float, nums)))
